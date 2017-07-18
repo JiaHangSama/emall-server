@@ -1,2 +1,3 @@
-# vshop
-E-commerce platform
+# 环球商城
+---
+> 耗资千亿打造全球电商平台，圆你购物梦
