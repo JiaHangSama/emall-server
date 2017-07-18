@@ -16,3 +16,15 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+/*
+ * 测试路由
+ * 地址：ip + /vshop/public/api/test
+*/
+$api = app('Dingo\Api\Routing\Router');
+$api->version('v1', function ($api){
+    $api->group(['namespace' => 'App\Http\Controllers\Api\Test'], function ($api){
+        $api->get('/test','TestApiController@test');
+    });
+});
